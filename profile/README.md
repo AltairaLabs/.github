@@ -26,23 +26,23 @@ Getting AI from a laptop demo to production is hard. Teams struggle with:
 <table>
 <tr>
 <td width="25%" align="center">
-<img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptarena.svg" width="48" height="48" alt="PromptArena"><br>
-<strong>PromptArena</strong><br>
+<a href="https://github.com/altairalabs/promptarena"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptarena.svg" width="48" height="48" alt="PromptArena"></a><br>
+<a href="https://github.com/altairalabs/promptarena"><strong>PromptArena</strong></a><br>
 <sub>Load testing, evaluation, and synthetic data generation</sub>
 </td>
 <td width="25%" align="center">
-<img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptpack.svg" width="48" height="48" alt="PromptPack"><br>
-<strong>PromptPack</strong><br>
+<a href="https://github.com/altairalabs/promptpack"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptpack.svg" width="48" height="48" alt="PromptPack"></a><br>
+<a href="https://github.com/altairalabs/promptpack"><strong>PromptPack</strong></a><br>
 <sub>Standard packaging format for AI agents</sub>
 </td>
 <td width="25%" align="center">
-<img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptkit.svg" width="48" height="48" alt="PromptKit"><br>
-<strong>PromptKit</strong><br>
+<a href="https://github.com/altairalabs/promptkit"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptkit.svg" width="48" height="48" alt="PromptKit"></a><br>
+<a href="https://github.com/altairalabs/promptkit"><strong>PromptKit</strong></a><br>
 <sub>High-performance agent execution runtime</sub>
 </td>
 <td width="25%" align="center">
-<img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/omnia.svg" width="48" height="48" alt="Omnia"><br>
-<strong>Omnia</strong><br>
+<a href="https://github.com/altairalabs/omnia"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/omnia.svg" width="48" height="48" alt="Omnia"></a><br>
+<a href="https://github.com/altairalabs/omnia"><strong>Omnia</strong></a><br>
 <sub>Kubernetes-native deployment platform</sub>
 </td>
 </tr>
@@ -71,3 +71,5 @@ spec:
 ---
 
 <sub>Built for platform engineers who are tired of duct-taping AI into production.</sub>
+
+<sub><a href="https://www.altairalabs.ai">altairalabs.ai</a></sub>
