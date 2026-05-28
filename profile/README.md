@@ -26,8 +26,8 @@ Getting AI from a laptop demo to production is hard. Teams struggle with:
 <table>
 <tr>
 <td width="25%" align="center">
-<a href="https://github.com/altairalabs/promptkit"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptarena.svg" width="48" height="48" alt="PromptArena"></a><br>
-<a href="https://github.com/altairalabs/promptkit"><strong>PromptArena</strong></a><br>
+<a href="https://promptkit.altairalabs.ai/arena"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptarena.svg" width="48" height="48" alt="PromptArena"></a><br>
+<a href="https://promptkit.altairalabs.ai/arena)"><strong>PromptArena</strong></a><br>
 <sub>Load testing, evaluation, and synthetic data generation</sub>
 </td>
 <td width="25%" align="center">
