@@ -1,75 +1,79 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/altairalabs/.github/main/assets/logo-white.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/altairalabs/.github/main/assets/logo.svg">
-  <img alt="AltairaLabs" src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/logo.svg" width="280">
-</picture>
+<img src="https://raw.githubusercontent.com/AltairaLabs/.github/main/assets/banner-altairalabs-b.png" alt="AltairaLabs — Own the agent layer. The model is the easy part." width="960">
 
-### From PoC to Production
+[![website](https://img.shields.io/badge/website-altairalabs.ai-E3B341?style=flat-square&labelColor=30363d)](https://www.altairalabs.ai)
+[![docs](https://img.shields.io/badge/docs-promptpack.org-8B5CF6?style=flat-square&labelColor=30363d)](https://promptpack.org)
+[![license](https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square&labelColor=30363d)](https://www.apache.org/licenses/LICENSE-2.0)
+[![self-hosted on kubernetes](https://img.shields.io/badge/self--hosted-kubernetes-326CE5?style=flat-square&labelColor=30363d&logo=kubernetes&logoColor=white)](https://kubernetes.io)
 
-We help enterprises deploy AI agents to production on their own Kubernetes infrastructure. No vendor lock-in, no managed services dependency—just robust, enterprise-grade tooling that integrates with your existing platform engineering workflows.
+**Build your agent platform in-house** — open, self-hosted, on the infrastructure your team already runs. Author, prove, run and operate agents from one open artifact, on the stack you already trust: Kubernetes, OCI, MCP, OpenTelemetry, Postgres. Rent the models; own the agent layer. No proprietary control plane.
 
----
+## The instruments
 
-## The Problem
-
-Getting AI from a laptop demo to production is hard. Teams struggle with:
-
-- **Infrastructure complexity** — AI workloads have unique requirements that don't fit traditional deployment patterns
-- **Governance gaps** — No standard way to enforce policies, audit usage, or manage costs across AI deployments
-- **Tooling fragmentation** — A patchwork of scripts, notebooks, and one-off solutions that don't scale
-- **Operational blindspots** — Limited visibility into what's running, how it's performing, and what it costs
-
-## Our Solution
-
-**Omnia** is a Kubernetes-native control plane for AI agent deployment, governance, and observability. Deploy agents using the same GitOps workflows you use for everything else.
+One lifecycle: `author → prove → run → operate`.
 
 <table>
 <tr>
-<td width="25%" align="center">
-<a href="https://promptkit.altairalabs.ai/arena"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptarena.svg" width="48" height="48" alt="PromptArena"></a><br>
-<a href="https://promptkit.altairalabs.ai/arena"><strong>PromptArena</strong></a><br>
-<sub>Load testing, evaluation, and synthetic data generation</sub>
+<td width="50%" valign="top">
+<img src="https://raw.githubusercontent.com/AltairaLabs/.github/main/assets/mark-promptpack.png" width="26" align="left">&nbsp; <a href="https://github.com/AltairaLabs/promptpack-spec"><b>PromptPack</b></a><br>
+<sub><code>AUTHOR</code></sub><br>
+An open, declarative way to define and package an agent.
 </td>
-<td width="25%" align="center">
-<a href="https://github.com/altairalabs/promptpack-spec"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptpack.svg" width="48" height="48" alt="PromptPack"></a><br>
-<a href="https://github.com/altairalabs/promptpack-spec"><strong>PromptPack</strong></a><br>
-<sub>Standard packaging format for AI agents</sub>
+<td width="50%" valign="top">
+<img src="https://raw.githubusercontent.com/AltairaLabs/.github/main/assets/mark-promptarena.png" width="26" align="left">&nbsp; <a href="https://github.com/AltairaLabs/promptarena"><b>PromptArena</b></a><br>
+<sub><code>PROVE</code></sub><br>
+Prove it against simulated users hitting its real tools, in-cluster.
 </td>
-<td width="25%" align="center">
-<a href="https://github.com/altairalabs/promptkit"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/promptkit.svg" width="48" height="48" alt="PromptKit"></a><br>
-<a href="https://github.com/altairalabs/promptkit"><strong>PromptKit</strong></a><br>
-<sub>High-performance agent execution runtime</sub>
+</tr>
+<tr>
+<td valign="top">
+<img src="https://raw.githubusercontent.com/AltairaLabs/.github/main/assets/mark-promptkit.png" width="26" align="left">&nbsp; <a href="https://github.com/AltairaLabs/PromptKit"><b>PromptKit</b></a><br>
+<sub><code>RUN</code></sub><br>
+A lean Go runtime for agents — text, voice and video.
 </td>
-<td width="25%" align="center">
-<a href="https://github.com/altairalabs/omnia"><img src="https://raw.githubusercontent.com/altairalabs/.github/main/assets/omnia.svg" width="48" height="48" alt="Omnia"></a><br>
-<a href="https://github.com/altairalabs/omnia"><strong>Omnia</strong></a><br>
-<sub>Kubernetes-native deployment platform</sub>
+<td valign="top">
+<img src="https://raw.githubusercontent.com/AltairaLabs/.github/main/assets/mark-omnia.png" width="26" align="left">&nbsp; <a href="https://omnia.altairalabs.ai"><b>Omnia</b></a><br>
+<sub><code>OPERATE</code></sub><br>
+Telemetry, memory, governance &amp; compliance, in your own cluster.
 </td>
 </tr>
 </table>
 
-## Why Kubernetes-Native?
+## Why self-hosted
 
-Your platform team already knows Kubernetes. Your CI/CD pipelines already deploy to Kubernetes. Your security policies already govern Kubernetes.
+Nothing in here you don't already operate — so your SRE can clear it before anyone signs.
 
-We build on what you have instead of asking you to adopt yet another platform.
+| | |
+|---|---|
+| **Runs in your cluster** | On your own infrastructure — not a hyperscaler's managed cloud. |
+| **Built from what you run** | Kubernetes, OCI, MCP, OpenTelemetry, Postgres. No black box. |
+| **Open, inspectable** | Pull it, read it, run it. No proprietary control plane, no lock-in. |
+
+## Prove an agent
+
+Author it, then prove it — simulated users hitting its real tools, with assertions on what it must and must not do. Runs against mock providers, so it needs no API keys.
+
+```console
+$ npm install -g @altairalabs/promptarena @altairalabs/packc
+$ promptarena init demo --template iot-maintenance-demo
+$ cd demo
+$ promptarena run -c mock.arena.yaml
+```
+
+The demo pack ships a red-team persona that spends five turns trying to reach another tenant's equipment. The assertions hold it to account:
 
 ```yaml
-apiVersion: omnia.altairalabs.dev/v1
-kind: AgentRuntime
-metadata:
-  name: customer-support-agent
-spec:
-  promptPack: registry.altairalabs.dev/support-agent:v1.2.0
-  replicas: 3
-  resources:
-    requests:
-      memory: "512Mi"
-      cpu: "500m"
+conversation_assertions:
+  - type: tools_not_called_with_args      # never read another tenant's devices
+  - type: tool_calls_with_args            # every call scoped to the active customer
+  - type: content_not_includes            # no cross-tenant leakage, no injection echo
 ```
+
+Results land in `out/report.html`. Add `--format junit` and it gates a pipeline.
+
+> **Own the agent layer.** Your proprietary business logic and your users run in your own cluster — never routed through a vendor's cloud. Models are rented and swappable; the agent layer is where the value accrues, and it stays yours.
 
 ---
 
-<sub>Built for platform engineers who are tired of duct-taping AI into production.</sub>
+**[PromptPack](https://github.com/AltairaLabs/promptpack-spec)** &nbsp;·&nbsp; **[PromptArena](https://github.com/AltairaLabs/promptarena)** &nbsp;·&nbsp; **[PromptKit](https://github.com/AltairaLabs/PromptKit)** &nbsp;·&nbsp; **[Omnia](https://omnia.altairalabs.ai)**
 
-<sub><a href="https://www.altairalabs.ai">altairalabs.ai</a></sub>
+Own the agent layer. The model is the easy part. → **[altairalabs.ai](https://www.altairalabs.ai)**
